@@ -5,15 +5,102 @@
 <title> The world’s simplest website! </title>
 <!-- created by Cole Jasmin --> 
  <style> 
+  body {
+     background-color: #0d0b02
+   }
   h1 {
     color: #e2c376
   }
+   h2 {
+    color: #e2c376
+  }
+   p {
+     color: #e7e7e7
+   }
+   .container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.container img {
+    
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+   body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
  </style>
 </head>
 <body>
+ <nav class="navbar">
+        <div class="logo">
+            <img src="portfolio logo.png" alt="Logo" width="480" height="461">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 <h1>
-  This is the world’s simplest website!
+  This is the world’s simplest website! 
 </h1>
+  <div class="container">
+    <img src="skull face.png" alt="Background Image" width="300" >
+    <div class="text-overlay">
+        <h1>This is some text</h1>
+        <p>This text is displayed in front of the image.</p>
+    </div>
+</div>
 <p>
 	This is the first exercise for our <a href=https://uwaterloo.ca/>University of Waterloo</a> web design class. Truth be told this humble site is not that impressive but we have to take baby steps when learning HTML. Things start out fairly simple but as we learn different tags and their properties we’ll be able to structure content more efficiently.
   </p>
